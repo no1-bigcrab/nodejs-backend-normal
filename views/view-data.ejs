@@ -10,6 +10,7 @@
                     <tr>
                         <th>Stt</th>
                         <th>Tên </th>
+                        <th>Tuổi </th>
                         <th>Phone</th>
                         <th>Action || <a href="/add" class="btn btn-success"><i class="fa fa-plus-square" aria-hidden="true">Thêm</i></a></th>
                     </tr>
@@ -19,11 +20,11 @@
                         <tr>
                             <td scope="row"><%= $i++ %></td>
                             <td><%= value.name %></td>
+                            <td><%= value.tuoi %></td>
                             <td><%= value.phone %></td>
                             <td>
                                 <a href="/edit/<%= value._id  %>" class="text-primary"><i class="fa fa-edit" >Sửa</i></a> ||
                                 <a href="/delete/<%= value._id  %>" class="text-danger" onclick="return delete_confirm('Bạn muốn xoá không')"><i class="fa fa-remove">Xoá</i></a>
-                                
                             </td>
                         </tr>
                         <% }) %> 
