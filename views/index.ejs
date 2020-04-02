@@ -14,9 +14,9 @@
   <body>
       <div class="container">
         <div class="jumbotron jumbotron-fluid">
-          <div class="container text-center">
-            <h1 class="display-3">Upload imagess</h1>
-            <p class="lead">Jumbo helper text</p>
+          <div class="container">
+            <h1 class="display-3 text-center">Upload imagess</h1>
+            <p class="lead text-center">Jumbo helper text</p>
             <hr class="my-2">
             <div class="upload">
               <form id="upload-widget" method="post" action="/upload" class="dropzone">
@@ -24,6 +24,30 @@
                   <input name="file" type="file" />
                 </div>
               </form>
+              <form action="/upProduct" method="post">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Name product" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">The name</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Price</label>
+                  <input type="text" name="price" id="price" class="form-control" placeholder="Price product" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">Price</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Short Title</label>
+                  <input type="text" name="short_title" id="short_title" class="form-control" placeholder="Short title product" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">Short title</small>
+                </div>
+                <div class="form-group">
+                  <label for="">Description</label>
+                  <input type="text" name="description" id="description" class="form-control" placeholder="Description product" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">Description</small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+              </form>
+              
             </div>
           </div>
         </div>
